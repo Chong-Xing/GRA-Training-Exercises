@@ -1,0 +1,88 @@
+﻿Jacob Fowles, CRMDA, SPA
+Paul Johnson, CRMDA, POLS
+2015-11-13
+
+GRA Training Assignment #4
+
+This assignment involves the Integrated Postsecondary Education
+Database (IPEDS). IPEDS is the federal clearinghouse for higher
+education data. We want you to write a program that a) downloads b)
+unpacks c) imports and d) summarizes one of the IPEDS survey
+series. We want you to get the Finance data for private and public
+universities and measure each university’s revenue that comes from
+state sources. We want to download data for fiscal years 2002-2013.
+
+
+In order to figure out the address of the files to download, it is
+necessary to browse the Website.
+
+1. https://nces.ed.gov/ipeds/datacenter
+
+2. Click “Download Survey Data Files”, Choose the "Continue" button
+
+3. Start with “2002” and “Finance”, then "Continue"
+
+4. The  “Private not-for-profit institutions or Public institutions
+using FASB”.
+
+As you do that, you'll find that there are zip files to choose.  We
+leave it up to you to decide which data type is most easily downloaded
+and put to use in your program of choice. 
+
+
+Write a program that handles these challenges:
+
+1. Download. We don't want you to point-and-click on the files. Write
+a function that downloads the zip files for the 2002 – 2013. Save them
+in a single folder. (Hint: the files and directories for all years
+have a similar naming structure).
+
+2. Unzip each file.  In some zip files, there will be an original
+data file along with a corrected version suffixed "_rv". In that case,
+we want to keep the “_rv” file and discard the other.
+
+3. Import the data files. (It seems likely to us that this will
+be easier if you use the example command files that are provided
+for SAS or Stata users.)
+
+4. Create a new variable corresponding to the fiscal year of the
+survey
+
+5. You should only keep four variables:
+
+   unitid (the unique identifier for each university),
+
+   the year variable you created above,
+
+   f2d16 (total university revenue), and
+
+   f2d03 (state revenue)
+
+5. Append (stack) all of the datasets into long form, so you have one
+dataset that combines all years from 2002 - 2013
+
+6. The total revenue and state revenue are in nominal
+dollars. ("nominal" means "face value", not "adjusted for inflation").
+Create new variables that transform the revenue variables into real
+dollars using the annualized Consumer Price Index (CPI-U).  In the
+data folder of this problem, you should find a CSV file that has 2
+columns, the years and the CPI values.
+
+The CPI values are used as divisors, as in
+
+"real value" = "nominal value" / "CPI-U"
+
+to deflate numbers to a common scale. 
+
+7. Create a new variable that represents the percent of university
+revenue derived from state sources.
+
+8. Give all variables “pretty” names.  For your new dataset, create a
+codebook. For your codebook, include a summary table that includes
+means, standard deviations, minimum and maximum. These should be
+provided for the entire data set as well as for the individual years.
+
+9. Save your new dataset
+
+
+

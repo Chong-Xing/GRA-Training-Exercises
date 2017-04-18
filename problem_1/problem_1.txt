@@ -1,0 +1,41 @@
+## Paul Johnson
+## 20150918
+
+
+In the subfolder problem_1/launch, there is a SAS file
+
+"launch-csits.sas".
+
+It imports some SPSS files that are in the same folder.
+
+The part I want you to concentrate on is in lines 1-75,  
+where the files are imported and some recoding is done. 
+The code creates several average variables, phys, soc,
+sym, ... keli_s.
+
+We have a snapshot of the data, including those recodes,
+in a file called 
+
+problem_1/workingdata/data_06-10.csv
+
+We need to have same things in our
+new data set, along with all the rest of the information
+there.
+
+We are not exactly sure how that file was saved, there
+is no mention of it in the SAS file. Hence, we are
+suspicious of it.
+
+Write an R program that achieves same purpose, 
+compare your imported totals for the variables
+with the totals previously obtained.
+
+I've been through this exercise and it took me about
+90 minutes to import the data, and I've not yet
+resolved some differences between the results I get 
+and the numbers in data_06-10.csv. Hence, I'm very
+interested to find out what you get.
+
+There are bonus points if your R program is brief and clever. 
+But only if it is correct.
+

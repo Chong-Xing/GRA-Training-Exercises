@@ -1,0 +1,24 @@
+## Paul Johnson
+## 20150918
+
+There are several items to work with here.
+
+1. Review the file in problem_2/R/scatter.R.
+
+Note that it has several copy/pasted stanzas at the
+end where various variables are plotted.
+
+Write a function that gets the same job done.
+
+2. After succeeding in part 1, insert code that
+saves the graph results into one pdf file.
+
+3. Oops, your boss said he wanted those graphs
+in separate pdf files. Revise to get that done.
+
+4. Consider the graph in problem_2/R/output/scatter-1-103.pdf.
+Revise your function to produce a graph like that.
+
+If you aren't keeping your revisions of scatter.R file in git,
+you will be unhappy when you want to compare versions.
+So I suggest you work on this in Git.

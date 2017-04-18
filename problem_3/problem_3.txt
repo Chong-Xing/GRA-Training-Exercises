@@ -1,0 +1,42 @@
+## Paul Johnson
+## 20150108
+
+A client wrote with the following problem.
+
+"We have 2 survey files, pre and post, and we want to combine them
+into a single file that has the participant ID's as row values.  We
+don't know how to put the PRE and POST files together so they will
+come out right.
+
+The files are named:
+OnlineRM_POST.csv 
+OnlineRM_PRE.csv 
+
+In order to help you understand what we want, we have created a
+hand-written CSV file that shows where we want to go.  Can you please
+help?"
+
+I copied the data files in the data directory, and put the example
+"solution"
+
+IntendedResult.csv
+
+in the client_supplied folder.
+
+I was not sure if I should keep spare copies of all of the files he
+sent in the client_supplied folder.  I guess I would say yes, and then
+I'l use symbolic links from there into the data directory.  I did not
+do that in this case because MS Windows does not have symbolic links
+and I did not want to make it inconvenient for Windows users.
+
+My solution to this one required about 20 minutes, although I had an
+advantage because a client from School of Education asked exactly the
+same thing about 2 months ago.  The solution is in the details of the
+merge function in R.  That's a pretty big hint, I think.
+
+My first solution was not entirely perfect because I did not give back
+the columns in the order the client wanted in their Intended output.
+I tested some fancy ways to make that go, but was not too happy.  I
+ended up just copying column names from the intended result file.
+That's a little "basic" for my taste, but the fancy ways I see are all
+too complicated. But I'll put one in my answers, just so you can see.

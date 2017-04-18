@@ -1,0 +1,30 @@
+## Kate Coughlin
+## 20160601
+
+gra-training
+problem 5
+
+The aim of this exercise is to practice working with date formats and
+plotting according to dates.
+
+In the data folder there is a subset of data from the Global Terrorism
+Database, with information for years 1999-2015.  The original dataset
+is much larger, but a few years and variables are included in this
+example dataset.
+
+
+
+# part 1
+
+Create a scatter plot that shows the sum total number of global deaths
+('nkill') for each month, for each year included in the dataset.  See
+kc-plot1.pdf for desired output. Save your plot as a pdf in the output
+folder
+
+
+# part 2
+
+Create a scatter plot of sum total deaths by month/year for just years
+2014-2015, and have the x-axis include the month-year information.
+See kc-plot2 for desired output. Save your plot as a pdf in the output
+folder.

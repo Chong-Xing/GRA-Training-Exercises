@@ -1,0 +1,33 @@
+## Kate Coughlin
+## 20160601
+
+gra-training
+problem_6
+
+The aim of this exercise is to practice loading in multiple data sets,
+merging them, and incorporarting additional data provided in other
+spreadsheets.
+
+The data here is a subset of data from a linguistics experiment where
+non-native French speakers had to decide as quickly as possible if a
+word on the computer screen was a real word in French.
+
+Addionally, there is participant-level data (L2ParticipantData.csv)
+showing how proficient a particular participant is in French, and
+item-level data (StimuluiProperties.csv) providing frequency data for
+each word in the experiment.
+
+## Part 1
+
+Write a script that loads in participant data (p101-p105) and merges
+them into 1 dataframe. Remove items in the Nonce condition.
+
+## Part 2
+
+Working in the same dataframe from part 1, create new cols "cloze"
+"age" "frequency". Import the participant-level cloze and age data,
+and the item-level frequecny data.
+
+
+The final dataframe should look like "merged-data.csv" in the output
+folder.
